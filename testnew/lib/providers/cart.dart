@@ -51,6 +51,11 @@ class Cart extends ChangeNotifier {
     notifyListeners();
   }
 
+  void remove(String productId) {
+    _items.remove(productId);
+    notifyListeners();
+  }
+
   void removeSingleItem(String productId) {
     if (!_items.containsKey(productId)) {
       return;

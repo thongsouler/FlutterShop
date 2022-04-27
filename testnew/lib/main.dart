@@ -27,8 +27,6 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => Orders()),
       ],
       child: MaterialApp(
-        useInheritedMediaQuery: true,
-        locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,
         theme: ThemeData(
             primarySwatch: Colors.purple,
