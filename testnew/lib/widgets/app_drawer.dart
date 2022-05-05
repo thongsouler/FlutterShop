@@ -26,6 +26,19 @@ class AppDrawer extends StatelessWidget {
               title: const Text('Order'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/order');
+              }),
+          const Divider(),
+          ListTile(
+              leading: const Icon(Icons.bluetooth_connected),
+              title: const Text('PostAPI'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/post-api');
+              }),
+          ListTile(
+              leading: const Icon(Icons.airline_seat_flat),
+              title: const Text('VoucherAPI'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/voucher');
               })
         ],
       ),
