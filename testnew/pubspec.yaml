@@ -31,6 +31,8 @@ dependencies:
   provider: 
   device_preview:
   dio: ^3.0.10
+  google_maps_flutter: ^2.0.9
+  google_maps_flutter_web: ^0.3.2+1
 
 
 dev_dependencies:
